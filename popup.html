@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160PX;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+	
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+.popup {
+	background: red;
+	padding: 50px;
+	color: white;
+	margin: 10 10px;
+}
+
+</style>
+</head>
+<body style="text-align:center">
+
+<h2>Popup</h2>
+
+<div class="popup" onclick="mya()">A
+  <span class="popuptext" id="my1">ATHIRA</span>
+</div>
+
+<div class="popup" onclick="myb()">B
+  <span class="popuptext" id="my2">BRESIYA</span>
+</div>
+
+<div class="popup" onclick="myc()">C
+  <span class="popuptext" id="my3">CINDYA</span>
+</div>
+<div class="popup" onclick="myd()">D
+  <span class="popuptext" id="my4">DIVYA</span>
+</div>
+<div class="popup" onclick="mye()">E
+  <span class="popuptext" id="my5">EVE</span>
+</div>
+<div class="popup" onclick="myf()">F
+  <span class="popuptext" id="my6">FATHIMA</span>
+</div>
+<div class="popup" onclick="myg()">G
+  <span class="popuptext" id="my7">GEORGE</span>
+</div>
+<div class="popup" onclick="myh()">H
+  <span class="popuptext" id="my8">HIMA</span>
+</div>
+<div class="popup" onclick="myi()">I
+  <span class="popuptext" id="my9">INDHU</span>
+</div>
+<div class="popup" onclick="myj()">J
+  <span class="popuptext" id="my10">JONA</span>
+</div><br></br><br></br><br></br>
+<div class="popup" onclick="myk()">K
+  <span class="popuptext" id="my11">KRIPA</span>
+</div>
+<div class="popup" onclick="myl()">L
+  <span class="popuptext" id="my12">LOLITA</span>
+</div>
+<div class="popup" onclick="mym()">M
+  <span class="popuptext" id="my13">MONA</span>
+</div>
+<div class="popup" onclick="myn()">N
+  <span class="popuptext" id="my14">NANCY</span>
+</div>
+<div class="popup" onclick="myo()">O
+  <span class="popuptext" id="my15">ODUS</span>
+</div>
+<div class="popup" onclick="myp()">P
+  <span class="popuptext" id="my16">PRAKASH</span>
+</div>
+<div class="popup" onclick="myq()">Q
+  <span class="popuptext" id="my17">QUISHA</span>
+</div>
+<div class="popup" onclick="myr()">R
+  <span class="popuptext" id="my18">RAKSHAN</span>
+</div>
+<div class="popup" onclick="mys()">S
+  <span class="popuptext" id="my19">SRAVAN</span>
+</div>
+<div class="popup" onclick="myt()">T
+  <span class="popuptext" id="my20">TEENA</span>
+</div><br></br><br></br><br></br>
+<div class="popup" onclick="myu()">U
+  <span class="popuptext" id="my21">UDAY</span>
+</div>
+<div class="popup" onclick="myv()">V
+  <span class="popuptext" id="my22">VINITH</span>
+</div>
+<div class="popup" onclick="myw()">W
+  <span class="popuptext" id="my23">WARRIER</span>
+</div>
+<div class="popup" onclick="myx()">X
+  <span class="popuptext" id="my24">XENA</span>
+</div>
+<div class="popup" onclick="myy()">Y
+  <span class="popuptext" id="my25">YOGESH</span>
+</div>
+<div class="popup" onclick="myz()">Z
+  <span class="popuptext" id="my26">ZORAH</span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function mya() {
+    var popup = document.getElementById("my1");
+    popup.classList.toggle("show");
+}
+function myb() {
+    var popup = document.getElementById("my2");
+    popup.classList.toggle("show");
+}
+function myc() {
+    var popup = document.getElementById("my3");
+    popup.classList.toggle("show");
+}
+function myd() {
+    var popup = document.getElementById("my4");
+    popup.classList.toggle("show");
+}
+function mye() {
+    var popup = document.getElementById("my5");
+    popup.classList.toggle("show");
+}
+function myf() {
+    var popup = document.getElementById("my6");
+    popup.classList.toggle("show");
+}
+function myg() {
+    var popup = document.getElementById("my7");
+    popup.classList.toggle("show");
+}
+function myh() {
+    var popup = document.getElementById("my8");
+    popup.classList.toggle("show");
+}
+function myi() {
+    var popup = document.getElementById("my9");
+    popup.classList.toggle("show");
+}
+function myj() {
+    var popup = document.getElementById("my10");
+    popup.classList.toggle("show");
+}
+function myk() {
+    var popup = document.getElementById("my11");
+    popup.classList.toggle("show");
+}
+function myl() {
+    var popup = document.getElementById("my12");
+    popup.classList.toggle("show");
+}
+function mym() {
+    var popup = document.getElementById("my13");
+    popup.classList.toggle("show");
+}
+function myn() {
+    var popup = document.getElementById("my14");
+    popup.classList.toggle("show");
+}
+function myo() {
+    var popup = document.getElementById("my15");
+    popup.classList.toggle("show");
+}
+function myp() {
+    var popup = document.getElementById("my16");
+    popup.classList.toggle("show");
+}
+function myq() {
+    var popup = document.getElementById("my17");
+    popup.classList.toggle("show");
+}
+function myr() {
+    var popup = document.getElementById("my18");
+    popup.classList.toggle("show");
+}
+function mys() {
+    var popup = document.getElementById("my19");
+    popup.classList.toggle("show");
+}
+function myt() {
+    var popup = document.getElementById("my20");
+    popup.classList.toggle("show");
+}
+function myu() {
+    var popup = document.getElementById("my21");
+    popup.classList.toggle("show");
+}
+function myv() {
+    var popup = document.getElementById("my22");
+    popup.classList.toggle("show");
+}
+function myw() {
+    var popup = document.getElementById("my23");
+    popup.classList.toggle("show");
+}
+function myx() {
+    var popup = document.getElementById("my24");
+    popup.classList.toggle("show");
+}
+function myy() {
+    var popup = document.getElementById("my25");
+    popup.classList.toggle("show");
+}
+function myz() {
+    var popup = document.getElementById("my26");
+    popup.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
